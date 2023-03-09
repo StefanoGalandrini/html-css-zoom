@@ -19,17 +19,16 @@
     --top-bar-height: 8vh;
     --active-icon-color: rgb(75, 200, 0);
     --grey-bkg: rgb(74, 74, 74);
-    --image-gap: 0.3rem;
+    --image-gap: 0.5rem;
     --image-width: calc(100% - var(--image-gap) / 7)
 }
-
-
-
-/* SCREEN SETUP */
 
 body {
     background-color: black;
 }
+
+
+/* TOP BAR */
 
 .top-bar {
     height: var(--top-bar-height);
@@ -38,14 +37,6 @@ body {
     display: flex;
     justify-content: flex-end;
 }
-
-.bottom-bar {
-    height: var(--bottom-bar-height);
-    background-color: var(--bottom-bar-bkg);
-}
-
-
-/* TOP BAR */
 
 .view > span {
     background-color: var(--grey-bkg);
@@ -72,17 +63,16 @@ body {
     gap: var(--image-gap);
     flex-wrap: wrap;
     overflow-y: scroll;
-    background-color: red;
 }
 
 
 .card {
     position: relative;
-    min-width: calc(100% / 7 - var(--image-gap) * 6);
+    min-width: calc(100% / 7 - var(--image-gap));
     min-height: calc(100% / 5 - var(--image-gap) * 4);
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 9;
     margin-bottom: var(--image-gap);
-    flex: 1 0 auto;
+    flex: 0 0 auto;
     background-image: url(https://picsum.photos/200/150);
     background-size: cover;
     background-repeat: no-repeat;
@@ -103,6 +93,57 @@ body {
 
 
 
-
 /* BOTTOM BAR */
 
+
+.bottom-bar {
+    height: var(--bottom-bar-height);
+    background-color: var(--bottom-bar-bkg);
+    display: flex;
+    align-items: center;
+}
+
+.bottom-bar i {
+    font-size: 2em;
+}
+
+.bottom-bar .description {
+font-size: .8em;
+}
+
+.bottom-bar .small {
+    font-size: .7em;
+}
+
+.green {
+    color: var(--active-icon-color);
+}
+
+.left-icons {
+    display: flex;
+    flex: 0 0 10%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-icons .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}    
+
+.center-icons {
+    display: flex;
+    flex: 0 0 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-icons .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}    
