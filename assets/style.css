@@ -119,11 +119,15 @@ font-size: .8em;
     color: var(--active-icon-color);
 }
 
+
+/* left part */
+
 .left-icons {
     display: flex;
     flex: 0 0 10%;
     justify-content: space-around;
     align-items: center;
+    padding-left: 2rem;
 }
 
 .left-icons .icon {
@@ -133,9 +137,12 @@ font-size: .8em;
     justify-content: center;
 }    
 
+
+/* central part */
+
 .center-icons {
     display: flex;
-    flex: 0 0 70%;
+    flex: 0 0 82%;
     justify-content: center;
     align-items: center;
 }
@@ -147,3 +154,17 @@ font-size: .8em;
     justify-content: center;
     padding: 0 1rem;
 }    
+
+
+/* final part */
+
+.right-end {
+    display: flex;
+    height: 100%;
+    flex: 0 0 8%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-bkg);
+    color: red;
+    font-size: 0.75em;
+}
