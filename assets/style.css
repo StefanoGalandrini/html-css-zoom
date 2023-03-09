@@ -13,22 +13,58 @@
 :root {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    color: white;
+    --bottom-bar-bkg: rgb(34, 34, 34);
+    --bottom-bar-height: 8vh;
+    --top-bar-height: 5vh;
+    --active-icon-color: rgb(75, 200, 0);
+    --grey-bkg: rgb(74, 74, 74);
+    --image-gap-x: 1rem;
+    --image-gap-y: 2rem;
+    --image-width: calc(100% - var(--image-gap) / 7)
 }
 
 
 
+/* SCREEN SETUP */
 
-/*PROPRIETÀ COMUNI */
+body {
+    background-color: black;
+}
+
+.top-bar {
+    height: var(--top-bar-height);
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-container {
+    height: calc(100vh - var(--top-bar-height) - var(--bottom-bar-height));
+    width: 90vw;
+    margin-inline: auto;
+    overflow-y: scroll;
+    background-color: red;
+}
+
+.bottom-bar {
+    height: var(--bottom-bar-height);
+    background-color: var(--bottom-bar-bkg);
+}
 
 
+/* IMAGES SECTION */
 
+.view > span {
+    background-color: var(--grey-bkg);
+    padding: 0.3rem 0.3rem;
+    font-size: .75em;
+    border-radius: 5px;
+}
 
-/* HEADER */
-
-
-
-
-/* MAIN */
+.view i {
+    font-size: 1.3em;
+}
 
 
 
