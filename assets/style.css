@@ -131,13 +131,16 @@ ul {
 }
 
 .bottom-bar-container .description {
+    height: 2rem;
     font-size: .75rem;
-    margin-top: .5rem;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
 
 .green {
     color: var(--active-icon-color);
-}
+}    
 
 .bottom-bar-container button {
     width: 6rem;
